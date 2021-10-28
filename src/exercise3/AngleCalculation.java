@@ -18,7 +18,10 @@ public class AngleCalculation{
           }else{
             grad = (winkel * 180)/3.14;
             System.out.println("Angle: " + grad + ch);
+
           }
+          ch = input.next().charAt(0);
+          winkel= input.nextDouble();
         }while (ch ==  'r' || ch == 'd');
     }
 }

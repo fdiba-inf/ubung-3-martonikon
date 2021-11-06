@@ -8,15 +8,15 @@ public class AngleCalculation{
         Scanner input = new Scanner(System.in);
         double winkel= input.nextDouble();
         char ch = input.next().charAt(0);
-        double grad = (winkel * 180) / 3.14;
-        double radiant =(winkel *3.14) /180;
+        double grad = (winkel * 180.0) / 3.14;
+        double radiant =(winkel *3.14) /180.0;
 
         do{
           if (ch == 'r'){
-            radiant = (winkel * 3.14)/180;
+            radiant = (winkel * 3.14)/180.0;
             System.out.println("Angle: " + radiant + ch);
           }else{
-            grad = (winkel * 180)/3.14;
+            grad = (winkel * 180.0)/3.14;
             System.out.println("Angle: " + grad + ch);
 
           }

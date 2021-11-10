@@ -3,27 +3,18 @@ package exercise3;
 import java.util.Scanner;
 
 public class NumberSearch {
-
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int number;
-        int counter = 0;
-        for(number=100; number >1000; number++){
-
-          if(number % 5 == 0 && number % 6 == 0){
-            if(counter>9){
-              System.out.print(number + " ");
-              counter++;
-            }else{
-              System.out.println(number);
-              counter++;
-            }
-          }
+  public static void main(String[] args) {
+    int br = 1;
+    for (int i = 100; i <= 1000; i++) {
+      if (i % 30 == 0) {
+        if(br == 10) {
+          System.out.println(i);
+          br = 1;
+        } else {
+          System.out.print(i + " ");
+          br++;
         }
-
-
-
-
-
+      }
     }
+  }
 }
